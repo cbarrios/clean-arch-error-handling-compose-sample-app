@@ -1,4 +1,4 @@
-package com.lalosapps.cleanarcherrorhandling
+package com.lalosapps.cleanarcherrorhandling.ui.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
