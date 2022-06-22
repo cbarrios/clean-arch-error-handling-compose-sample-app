@@ -54,7 +54,7 @@ fun MyApp() {
                 Text(text = stringResource(R.string.submit_btn))
             }
             Spacer(modifier = Modifier.height(8.dp))
-            Text(text = viewModel.error ?: "")
+            Text(text = viewModel.error?.asString() ?: "")
         }
     }
 }

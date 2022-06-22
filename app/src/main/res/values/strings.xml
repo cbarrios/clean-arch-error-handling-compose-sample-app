@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CleanArchErrorHandling</string>
     <string name="submit_btn">Submit</string>
+    <string name="error_invalid_email">That is not a valid email</string>
 </resources>

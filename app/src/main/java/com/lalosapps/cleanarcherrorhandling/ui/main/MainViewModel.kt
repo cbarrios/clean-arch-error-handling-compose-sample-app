@@ -6,6 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.lalosapps.cleanarcherrorhandling.core.util.Resource
+import com.lalosapps.cleanarcherrorhandling.core.util.UiText
 import com.lalosapps.cleanarcherrorhandling.domain.SubmitEmailUseCase
 import kotlinx.coroutines.launch
 
@@ -16,7 +17,7 @@ class MainViewModel(
     var email by mutableStateOf("")
         private set
 
-    var error by mutableStateOf<String?>(null)
+    var error by mutableStateOf<UiText?>(null)
         private set
 
     fun onEmailChanged(email: String) {
