@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CleanArchErrorHandling</string>
+    <string name="submit_btn">Submit</string>
 </resources>

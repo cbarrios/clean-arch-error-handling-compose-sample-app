@@ -26,7 +26,10 @@ class MainViewModel(
     fun submitEmail() {
         viewModelScope.launch {
             val result = submitEmailUseCase(email)
-            if (result is Resource.Error) error = result.message
+            error = if (result is Resource.Error)
+                result.message
+            else
+                null
         }
     }
 }
