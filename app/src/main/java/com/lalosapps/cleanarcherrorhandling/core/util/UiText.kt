@@ -15,7 +15,10 @@ sealed class UiText {
     fun asString(): String {
         return when (this) {
             is DynamicString -> value
-            is StringResource -> stringResource(id, args)
+            is StringResource -> stringResource(
+                id = id,
+                formatArgs = args
+            ) // formatArgs named argument is required for this to work properly. Passing args alone won't work.
         }
     }
 }
